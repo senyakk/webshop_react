@@ -1,3 +1,6 @@
+The template for the Web Book Shop application, with backend built using express and mongoose, and fronted built using Vite.
+The functionality allows to add, edit and delete the products in the book store.
+
 <img width="1299" alt="Screenshot 2025-06-09 at 16 00 02" src="https://github.com/user-attachments/assets/fe1b127d-c4f6-4b15-844c-f3dc9dbd1505" />
 
 
