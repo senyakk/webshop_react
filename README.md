@@ -16,8 +16,8 @@ A template for a Web Book Shop application, with a backend built using **Express
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/senyakk/webshop_react.git
+cd webshop_react
 ```
 
 ### 2. Set up environment variables
