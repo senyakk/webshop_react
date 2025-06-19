@@ -72,6 +72,15 @@ npm run start
 - The backend and frontend will run on the port specified in `server.js` (default: **3000**).
 ---
 
+## Running Docker
+
+To run the application in a docker container run 
+```bash
+docker-compose up --build
+```
+
+
+---
 ## Project Structure
 
 ```
