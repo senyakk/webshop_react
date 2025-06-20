@@ -74,7 +74,7 @@ npm run start
 
 ## Running Docker
 
-To run the application in a docker container run 
+To run the application in a docker container: 
 ```bash
 docker-compose up --build
 ```
