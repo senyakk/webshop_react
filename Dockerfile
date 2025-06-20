@@ -2,20 +2,22 @@ FROM node:20 AS build
 
 WORKDIR /app
 
-# Install root dependencies and frontend dependencies
+# Install root dependencies
 COPY package.json package-lock.json ./
 RUN npm install
-COPY frontend/package.json frontend/package-lock.json ./frontend/
-RUN cd frontend && npm install npm run build
 
-# Copy backend and frontend build
+# Copy the entire frontend directory (including index.html, src/, public/, etc.)
+COPY frontend ./frontend
+
+# Build the frontend
+RUN cd frontend && npm install && npm run build
+
+# Copy the rest of the backend code
 COPY . .
 
 # Set NODE_ENV to production
 ENV NODE_ENV=production
 
-# Expose port (match your backend/server.js)
 EXPOSE 3000
 
-# Start the backend (which serves the frontend build)
 CMD ["npm", "run", "start"]
